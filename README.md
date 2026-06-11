@@ -38,11 +38,11 @@
 
 | # | Урок | Что внутри |
 |---|------|------------|
-| 0 | [Жаргон — говоришь как свой](chapters/урок-0-жаргон.md) | Репа, коммит, пуш, ПР, форк, апстрим, конвеншенал коммитс |
-| 1 | [Установка и первые шаги](chapters/урок-1-установка.md) | Установка Git на Windows, настройка, SSH и PAT аутентификация |
-| 2 | [Команды на каждый день](chapters/урок-2-команды.md) | status, add, commit, push, log, stash, .gitignore, откат изменений |
-| 3 | [Ветки — работаешь без страха](chapters/урок-3-ветки.md) | Создание веток, merge vs rebase, конфликты, naming conventions |
-| 4 | [GitHub и командная работа](chapters/урок-4-github.md) | GitHub, remote, Pull Requests, форки, Issues, Actions |
+| 0 | [Жаргон — говоришь как свой](chapters/Leson0.md) | Репа, коммит, пуш, ПР, форк, апстрим, конвеншенал коммитс |
+| 1 | [Установка и первые шаги](chapters/Leson1.md) | Установка Git на Windows, настройка, SSH и PAT аутентификация |
+| 2 | [Команды на каждый день](chapters/Leson2.md) | status, add, commit, push, log, stash, .gitignore, откат изменений |
+| 3 | [Ветки — работаешь без страха](chapters/Leson3.md) | Создание веток, merge vs rebase, конфликты, naming conventions |
+| 4 | [GitHub и командная работа](chapters/Leson4.md) | GitHub, remote, Pull Requests, форки, Issues, Actions |
 
 ---
 
