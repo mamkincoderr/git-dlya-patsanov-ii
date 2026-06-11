@@ -2,7 +2,7 @@
 
 > Практическое руководство по Git и GitHub для тех, кто хочет разобраться без воды и скуки
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/)
 [![Язык](https://img.shields.io/badge/язык-русский-blue)](README.md)
 [![Уровень](https://img.shields.io/badge/уровень-с%20нуля-green)](README.md)
 
@@ -73,8 +73,7 @@
 
 ## 📜 Лицензия
 
-[Creative Commons Attribution 4.0 International](LICENSE)  
-Можешь использовать, распространять и адаптировать — с указанием автора.
+[WTFPL](LICENSE) — делай что хочешь.
 
 ---
 
