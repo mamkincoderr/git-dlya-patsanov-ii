@@ -5,6 +5,8 @@
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/)
 [![Язык](https://img.shields.io/badge/язык-русский-blue)](README.md)
 [![Уровень](https://img.shields.io/badge/уровень-с%20нуля-green)](README.md)
+[![Платформа](https://img.shields.io/badge/платформа-Windows%2011-blue)](README.md)
+[![Git](https://img.shields.io/badge/Git-2.50.1-orange)](README.md)
 
 ---
 
@@ -41,6 +43,17 @@
 | 2 | [Команды на каждый день](chapters/урок-2-команды.md) | status, add, commit, push, log, stash, .gitignore, откат изменений |
 | 3 | [Ветки — работаешь без страха](chapters/урок-3-ветки.md) | Создание веток, merge vs rebase, конфликты, naming conventions |
 | 4 | [GitHub и командная работа](chapters/урок-4-github.md) | GitHub, remote, Pull Requests, форки, Issues, Actions |
+
+---
+
+## 💻 Среда и требования
+
+Все команды написаны и проверены на:
+- **Windows 11**
+- **Git 2.50.1** (рекомендуется 2.23+ — используем `git switch` вместо старого `git checkout`)
+- **PowerShell** (не cmd)
+
+Если у тебя Linux или macOS — команды те же, кроме пары мест с путями и `ssh-agent` (там отмечено).
 
 ---
 
