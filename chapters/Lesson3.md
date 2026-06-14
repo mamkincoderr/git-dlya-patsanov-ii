@@ -31,6 +31,22 @@ git clone \\СЕРВЕР\repos\myproject.git
 git clone Z:\repos\myproject.git
 ```
 
+<details>
+<summary>🐧 Linux / 🍎 macOS — пути к bare-репозиторию</summary>
+
+```bash
+# Создать bare-репо на сервере:
+git init --bare /srv/git/myproject.git
+
+# Клонировать (если папка примонтирована через NFS или SMB):
+git clone /mnt/server/repos/myproject.git
+
+# Клонировать по SSH (самый распространённый способ в Linux):
+git clone user@server:/srv/git/myproject.git
+```
+
+</details>
+
 Дальше — обычные `push`, `pull`, `branch`. Без лимитов, без аккаунтов, без интернета.
 
 > *Bare-репозиторий — это просто папка с содержимым `.git` без рабочих файлов. Ты не можешь открыть его и посмотреть код напрямую — это хранилище для Git, не для людей. Именно поэтому его кладут на сервер, а не работают внутри.*
@@ -116,12 +132,21 @@ git push -u origin main
 SSH — криптографическая пара ключей. Приватный остаётся у тебя, публичный отдаёшь GitHub. Больше никаких паролей.
 
 ```powershell
-# Генерируем ключ (жми Enter на все вопросы)
+# Генерируем ключ (жми Enter на все вопросы) — команда одинакова на всех ОС
 ssh-keygen -t ed25519 -C "твой@email.ru"
 
 # Выводим публичный ключ — его копируешь на GitHub
 Get-Content "$env:USERPROFILE\.ssh\id_ed25519.pub"
 ```
+
+<details>
+<summary>🐧 Linux / 🍎 macOS</summary>
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+</details>
 
 На GitHub: **Settings** → **SSH and GPG keys** → **New SSH key** → вставляй.
 
@@ -135,6 +160,28 @@ ssh-add "$env:USERPROFILE\.ssh\id_ed25519"
 ssh -T git@github.com
 # Должно сказать: "Hi ИМЯ! You've successfully authenticated..."
 ```
+
+<details>
+<summary>🐧 Linux / 🍎 macOS — запуск ssh-agent</summary>
+
+**Linux:**
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+
+**macOS** — Keychain сам держит ключи, достаточно добавить один раз:
+```bash
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+```
+После перезагрузки ключ подтягивается автоматически — `ssh-agent` запускать вручную не нужно.
+
+Проверка везде одинакова:
+```bash
+ssh -T git@github.com
+```
+
+</details>
 
 > *SSH — как пропуск на проходной. Один раз оформил, дальше просто проходишь. PAT — как каждый раз предъявлять паспорт.*
 

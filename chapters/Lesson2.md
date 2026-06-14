@@ -42,6 +42,32 @@ git --version
 # Если написало — ты красавчик. Если "команда не найдена" — переустанови.
 ```
 
+<details>
+<summary>🐧 Linux / 🍎 macOS — установка Git</summary>
+
+**macOS:**
+```bash
+# Homebrew (рекомендуется):
+brew install git
+
+# Или встроенные инструменты Apple (чуть старее):
+xcode-select --install
+```
+
+**Linux (Ubuntu / Debian):**
+```bash
+sudo apt update && sudo apt install git
+```
+
+**Linux (Fedora / RHEL):**
+```bash
+sudo dnf install git
+```
+
+Проверка та же: `git --version`
+
+</details>
+
 ---
 
 ## ⚙️ Первоначальная настройка
@@ -58,8 +84,9 @@ git config --global user.email "твой@email.ru"
 # Называем главную ветку "main" а не "master" (современный стандарт)
 git config --global init.defaultBranch main
 
-# Фикс переносов строк для Windows (важно если в команде есть маководы)
-git config --global core.autocrlf true
+# Фикс переносов строк — важно если в команде разные ОС
+git config --global core.autocrlf true    # Windows
+# git config --global core.autocrlf input  # Linux / macOS
 
 # Открывать VSCode для написания длинных сообщений коммитов
 git config --global core.editor "code --wait"
@@ -99,7 +126,20 @@ git status
 New-Item README.md
 Add-Content README.md "# Мой первый репозиторий"
 Add-Content README.md "Здесь будет мой крутой проект."
+```
 
+<details>
+<summary>🐧 Linux / 🍎 macOS</summary>
+
+```bash
+touch README.md
+echo "# Мой первый репозиторий" >> README.md
+echo "Здесь будет мой крутой проект." >> README.md
+```
+
+</details>
+
+```powershell
 git status
 # Теперь увидишь README.md как "untracked file" — Git его видит, но ещё не следит
 ```
@@ -139,7 +179,19 @@ git log --oneline
 # Создаём ещё файл
 New-Item index.html
 Add-Content index.html "<h1>Привет, мир!</h1>"
+```
 
+<details>
+<summary>🐧 Linux / 🍎 macOS</summary>
+
+```bash
+touch index.html
+echo "<h1>Привет, мир!</h1>" >> index.html
+```
+
+</details>
+
+```powershell
 git add index.html
 git commit -m "feat: add index page"
 

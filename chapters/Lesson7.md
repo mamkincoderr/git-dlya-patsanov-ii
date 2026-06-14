@@ -14,7 +14,7 @@ VSCode умеет в Git из коробки — без плагинов, без
 
 ## 📍 Где это всё живёт — Source Control панель
 
-Нажми **Ctrl+Shift+G** (или кликни на иконку веток в левом сайдбаре):
+Нажми **Ctrl+Shift+G** (на macOS — **Cmd+Shift+G**), или кликни на иконку веток в левом сайдбаре:
 
 ![Source Control панель VSCode](../assets/vscode-source-control.png)
 
