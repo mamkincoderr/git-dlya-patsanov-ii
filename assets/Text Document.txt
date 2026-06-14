@@ -1,6 +1,0 @@
-Скрин 1 (панель)	vscode-source-control.png
-Скрин 2 (кнопка +)	vscode-stage-button.png
-Скрин 3 (diff)	vscode-diff.png
-Скрин 4 (commit msg)	vscode-commit-message.png
-Скрин 5 (ветки)	vscode-branches.png
-Скрин 6 (конфликт)	vscode-conflict.png
