@@ -38,11 +38,13 @@
 
 | # | Урок | Что внутри |
 |---|------|------------|
-| 0 | [Жаргон — говоришь как свой](chapters/Lesson0.md) | Репа, коммит, пуш, ПР, форк, апстрим, конвеншенал коммитс |
-| 1 | [Установка и первые шаги](chapters/Lesson1.md) | Установка Git на Windows, настройка, SSH и PAT аутентификация |
-| 2 | [Команды на каждый день](chapters/Lesson2.md) | status, add, commit, push, log, stash, .gitignore, откат изменений |
-| 3 | [Ветки — работаешь без страха](chapters/Lesson3.md) | Создание веток, merge vs rebase, конфликты, naming conventions |
-| 4 | [GitHub и командная работа](chapters/Lesson4.md) | GitHub, remote, Pull Requests, форки, Issues, Actions |
+| 1 | [Жаргон — говоришь как свой](chapters/Lesson1.md) | Репа, коммит, пуш, ПР, форк, апстрим, конвеншенал коммитс |
+| 2 | [Ставим Git и делаем первый коммит](chapters/Lesson2.md) | Установка Git на Windows, настройка, init, add, commit, log |
+| 3 | [Подключаем GitHub](chapters/Lesson3.md) | Аккаунт, PAT и SSH аутентификация, remote add, первый push |
+| 4 | [Команды на каждый день](chapters/Lesson4.md) | status, add, commit, push, log, stash, .gitignore, откат изменений |
+| 5 | [Ветки — работаешь без страха](chapters/Lesson5.md) | Создание веток, merge vs rebase, конфликты, naming conventions |
+| 6 | [GitHub и командная работа](chapters/Lesson6.md) | Pull Requests, форки, Issues, Actions |
+| 7 | [Git в VSCode](chapters/Lesson7.md) | Source Control панель, stage/commit/diff мышкой, конфликты |
 
 ---
 
@@ -72,7 +74,7 @@
 
 Уроки идут по порядку — каждый следующий опирается на предыдущий.
 
-1. Начни с [Урока 0](chapters/Lesson0.md) — даже если кажется что знаешь жаргон
+1. Начни с [Урока 1](chapters/Lesson1.md) — даже если кажется что знаешь жаргон
 2. На каждом уроке есть **практические задания** — делай их, не пропускай
 3. Завёл `git-practice` папку? Отлично, именно в ней и практикуешься
 
