@@ -38,11 +38,11 @@
 
 | # | Урок | Что внутри |
 |---|------|------------|
-| 0 | [Жаргон — говоришь как свой](chapters/Leson0.md) | Репа, коммит, пуш, ПР, форк, апстрим, конвеншенал коммитс |
-| 1 | [Установка и первые шаги](chapters/Leson1.md) | Установка Git на Windows, настройка, SSH и PAT аутентификация |
-| 2 | [Команды на каждый день](chapters/Leson2.md) | status, add, commit, push, log, stash, .gitignore, откат изменений |
-| 3 | [Ветки — работаешь без страха](chapters/Leson3.md) | Создание веток, merge vs rebase, конфликты, naming conventions |
-| 4 | [GitHub и командная работа](chapters/Leson4.md) | GitHub, remote, Pull Requests, форки, Issues, Actions |
+| 0 | [Жаргон — говоришь как свой](chapters/Lesson0.md) | Репа, коммит, пуш, ПР, форк, апстрим, конвеншенал коммитс |
+| 1 | [Установка и первые шаги](chapters/Lesson1.md) | Установка Git на Windows, настройка, SSH и PAT аутентификация |
+| 2 | [Команды на каждый день](chapters/Lesson2.md) | status, add, commit, push, log, stash, .gitignore, откат изменений |
+| 3 | [Ветки — работаешь без страха](chapters/Lesson3.md) | Создание веток, merge vs rebase, конфликты, naming conventions |
+| 4 | [GitHub и командная работа](chapters/Lesson4.md) | GitHub, remote, Pull Requests, форки, Issues, Actions |
 
 ---
 
@@ -72,7 +72,7 @@
 
 Уроки идут по порядку — каждый следующий опирается на предыдущий.
 
-1. Начни с [Урока 0](chapters/урок-0-жаргон.md) — даже если кажется что знаешь жаргон
+1. Начни с [Урока 0](chapters/Lesson0.md) — даже если кажется что знаешь жаргон
 2. На каждом уроке есть **практические задания** — делай их, не пропускай
 3. Завёл `git-practice` папку? Отлично, именно в ней и практикуешься
 
