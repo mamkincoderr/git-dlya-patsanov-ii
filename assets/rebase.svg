@@ -1,62 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 230" font-family="monospace">
-  <rect width="620" height="230" fill="#f6f8fa" rx="8" stroke="#d0d7de" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 270" font-family="monospace">
+  <rect width="600" height="270" fill="#f6f8fa" rx="8" stroke="#d0d7de" stroke-width="1"/>
 
-  <!-- BEFORE label -->
-  <text x="14" y="26" fill="#57606a" font-size="12" font-weight="bold">ДО rebase:</text>
+  <!-- ═══ BEFORE section ═══ -->
+  <text x="14" y="25" fill="#57606a" font-size="12" font-weight="bold">ДО rebase:</text>
 
-  <!-- before: main line -->
-  <line x1="60" y1="60" x2="220" y2="60" stroke="#57606a" stroke-width="2"/>
-  <!-- before: branch from C -->
-  <line x1="220" y1="60" x2="300" y2="110" stroke="#57606a" stroke-width="2"/>
-  <!-- before: feature line -->
-  <line x1="300" y1="110" x2="380" y2="110" stroke="#57606a" stroke-width="2"/>
+  <!-- "main" badge right=61, circle A left=76 → gap 15px -->
+  <rect x="5" y="48" width="56" height="18" rx="4" fill="#0969da"/>
+  <text x="33" y="61" text-anchor="middle" fill="white" font-size="10" font-weight="bold">main</text>
 
-  <circle cx="60"  cy="60" r="14" fill="#0969da"/>
-  <text x="60"  y="65" text-anchor="middle" fill="white" font-size="12" font-weight="bold">A</text>
+  <!-- lines -->
+  <line x1="90"  y1="65" x2="280" y2="65"  stroke="#57606a" stroke-width="2"/>
+  <line x1="280" y1="65" x2="350" y2="130" stroke="#57606a" stroke-width="2"/>
+  <line x1="350" y1="130" x2="440" y2="130" stroke="#57606a" stroke-width="2"/>
 
-  <circle cx="140" cy="60" r="14" fill="#0969da"/>
-  <text x="140" y="65" text-anchor="middle" fill="white" font-size="12" font-weight="bold">B</text>
+  <!-- before: main commits -->
+  <circle cx="90"  cy="65" r="14" fill="#0969da"/>
+  <text x="90"  y="70" text-anchor="middle" fill="white" font-size="12" font-weight="bold">A</text>
 
-  <circle cx="220" cy="60" r="14" fill="#0969da"/>
-  <text x="220" y="65" text-anchor="middle" fill="white" font-size="12" font-weight="bold">C</text>
+  <circle cx="185" cy="65" r="14" fill="#0969da"/>
+  <text x="185" y="70" text-anchor="middle" fill="white" font-size="12" font-weight="bold">B</text>
 
-  <circle cx="300" cy="110" r="14" fill="#bf8700"/>
-  <text x="300" y="115" text-anchor="middle" fill="white" font-size="12" font-weight="bold">D</text>
+  <circle cx="280" cy="65" r="14" fill="#0969da"/>
+  <text x="280" y="70" text-anchor="middle" fill="white" font-size="12" font-weight="bold">C</text>
 
-  <circle cx="380" cy="110" r="14" fill="#bf8700"/>
-  <text x="380" y="115" text-anchor="middle" fill="white" font-size="12" font-weight="bold">E</text>
+  <!-- before: feature commits -->
+  <circle cx="350" cy="130" r="14" fill="#bf8700"/>
+  <text x="350" y="135" text-anchor="middle" fill="white" font-size="12" font-weight="bold">D</text>
 
-  <!-- arrow down -->
-  <text x="310" y="155" text-anchor="middle" fill="#57606a" font-size="22">↓</text>
-  <text x="310" y="172" text-anchor="middle" fill="#57606a" font-size="12">git rebase main</text>
+  <circle cx="440" cy="130" r="14" fill="#bf8700"/>
+  <text x="440" y="135" text-anchor="middle" fill="white" font-size="12" font-weight="bold">E</text>
 
-  <!-- AFTER label -->
-  <text x="14" y="200" fill="#57606a" font-size="12" font-weight="bold">ПОСЛЕ rebase:</text>
+  <!-- "feature/login" badge top=148, circles D/E bottom=144 → gap 4px -->
+  <rect x="255" y="148" width="120" height="18" rx="4" fill="#bf8700"/>
+  <text x="315" y="161" text-anchor="middle" fill="white" font-size="10" font-weight="bold">feature/login</text>
 
-  <!-- after: single line -->
-  <line x1="60" y1="215" x2="540" y2="215" stroke="#57606a" stroke-width="2"/>
+  <!-- ═══ Arrow ═══ -->
+  <text x="300" y="192" text-anchor="middle" fill="#57606a" font-size="30">↓</text>
+  <text x="300" y="210" text-anchor="middle" fill="#57606a" font-size="12">git rebase main</text>
 
-  <circle cx="60"  cy="215" r="14" fill="#0969da"/>
-  <text x="60"  y="220" text-anchor="middle" fill="white" font-size="12" font-weight="bold">A</text>
+  <!-- ═══ AFTER section ═══ -->
+  <!-- "ПОСЛЕ rebase:" baseline=222, after commits top=236 → gap 14px -->
+  <text x="14"  y="222" fill="#57606a" font-size="12" font-weight="bold">ПОСЛЕ rebase:</text>
+  <!-- "история линейная" baseline=228, after commits top=236 → gap ~6px -->
+  <text x="420" y="228" text-anchor="middle" fill="#57606a" font-size="11">история линейная</text>
 
-  <circle cx="140" cy="215" r="14" fill="#0969da"/>
-  <text x="140" y="220" text-anchor="middle" fill="white" font-size="12" font-weight="bold">B</text>
+  <!-- line -->
+  <line x1="90" y1="250" x2="460" y2="250" stroke="#57606a" stroke-width="2"/>
 
-  <circle cx="220" cy="215" r="14" fill="#0969da"/>
-  <text x="220" y="220" text-anchor="middle" fill="white" font-size="12" font-weight="bold">C</text>
+  <!-- after: main commits (same A B C) -->
+  <circle cx="90"  cy="250" r="14" fill="#0969da"/>
+  <text x="90"  y="255" text-anchor="middle" fill="white" font-size="12" font-weight="bold">A</text>
 
-  <circle cx="380" cy="215" r="14" fill="#bf8700"/>
-  <text x="380" y="220" text-anchor="middle" fill="white" font-size="12" font-weight="bold">D'</text>
+  <circle cx="185" cy="250" r="14" fill="#0969da"/>
+  <text x="185" y="255" text-anchor="middle" fill="white" font-size="12" font-weight="bold">B</text>
 
-  <circle cx="460" cy="215" r="14" fill="#bf8700"/>
-  <text x="460" y="220" text-anchor="middle" fill="white" font-size="12" font-weight="bold">E'</text>
+  <circle cx="280" cy="250" r="14" fill="#0969da"/>
+  <text x="280" y="255" text-anchor="middle" fill="white" font-size="12" font-weight="bold">C</text>
 
-  <text x="460" y="198" text-anchor="middle" fill="#57606a" font-size="11">история линейная</text>
+  <!-- after: rebased feature commits D' E' -->
+  <circle cx="375" cy="250" r="14" fill="#bf8700"/>
+  <text x="375" y="255" text-anchor="middle" fill="white" font-size="11" font-weight="bold">D'</text>
 
-  <!-- branch label before -->
-  <rect x="8" y="42" width="44" height="18" rx="4" fill="#0969da"/>
-  <text x="30" y="55" text-anchor="middle" fill="white" font-size="10" font-weight="bold">main</text>
-
-  <rect x="240" y="122" width="110" height="18" rx="4" fill="#bf8700"/>
-  <text x="295" y="135" text-anchor="middle" fill="white" font-size="10" font-weight="bold">feature/login</text>
+  <circle cx="460" cy="250" r="14" fill="#bf8700"/>
+  <text x="460" y="255" text-anchor="middle" fill="white" font-size="11" font-weight="bold">E'</text>
 </svg>

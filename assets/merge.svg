@@ -1,43 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 175" font-family="monospace">
-  <rect width="580" height="175" fill="#f6f8fa" rx="8" stroke="#d0d7de" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 185" font-family="monospace">
+  <rect width="590" height="185" fill="#f6f8fa" rx="8" stroke="#d0d7de" stroke-width="1"/>
 
-  <!-- main branch line A-B-C -->
-  <line x1="60" y1="70" x2="220" y2="70" stroke="#57606a" stroke-width="2"/>
-  <!-- main line C to merge M -->
-  <line x1="220" y1="70" x2="500" y2="70" stroke="#57606a" stroke-width="2"/>
-  <!-- branch line from C down to feature -->
-  <line x1="220" y1="70" x2="320" y2="130" stroke="#57606a" stroke-width="2"/>
-  <!-- feature branch line D-E -->
-  <line x1="320" y1="130" x2="420" y2="130" stroke="#57606a" stroke-width="2"/>
-  <!-- merge line from E up to M -->
-  <line x1="420" y1="130" x2="500" y2="70" stroke="#57606a" stroke-width="2"/>
+  <!-- lines (drawn first, behind circles) -->
+  <line x1="90"  y1="75" x2="280" y2="75"  stroke="#57606a" stroke-width="2"/>
+  <line x1="280" y1="75" x2="545" y2="75"  stroke="#57606a" stroke-width="2"/>
+  <line x1="280" y1="75" x2="360" y2="145" stroke="#57606a" stroke-width="2"/>
+  <line x1="360" y1="145" x2="460" y2="145" stroke="#57606a" stroke-width="2"/>
+  <line x1="460" y1="145" x2="545" y2="75"  stroke="#57606a" stroke-width="2"/>
 
   <!-- main commits -->
-  <circle cx="60"  cy="70" r="16" fill="#0969da"/>
-  <text x="60"  y="75" text-anchor="middle" fill="white" font-size="13" font-weight="bold">A</text>
+  <circle cx="90"  cy="75" r="16" fill="#0969da"/>
+  <text x="90"  y="80" text-anchor="middle" fill="white" font-size="13" font-weight="bold">A</text>
 
-  <circle cx="140" cy="70" r="16" fill="#0969da"/>
-  <text x="140" y="75" text-anchor="middle" fill="white" font-size="13" font-weight="bold">B</text>
+  <circle cx="185" cy="75" r="16" fill="#0969da"/>
+  <text x="185" y="80" text-anchor="middle" fill="white" font-size="13" font-weight="bold">B</text>
 
-  <circle cx="220" cy="70" r="16" fill="#0969da"/>
-  <text x="220" y="75" text-anchor="middle" fill="white" font-size="13" font-weight="bold">C</text>
+  <circle cx="280" cy="75" r="16" fill="#0969da"/>
+  <text x="280" y="80" text-anchor="middle" fill="white" font-size="13" font-weight="bold">C</text>
 
   <!-- feature commits -->
-  <circle cx="320" cy="130" r="16" fill="#bf8700"/>
-  <text x="320" y="135" text-anchor="middle" fill="white" font-size="13" font-weight="bold">D</text>
+  <circle cx="360" cy="145" r="16" fill="#bf8700"/>
+  <text x="360" y="150" text-anchor="middle" fill="white" font-size="13" font-weight="bold">D</text>
 
-  <circle cx="420" cy="130" r="16" fill="#bf8700"/>
-  <text x="420" y="135" text-anchor="middle" fill="white" font-size="13" font-weight="bold">E</text>
+  <circle cx="460" cy="145" r="16" fill="#bf8700"/>
+  <text x="460" y="150" text-anchor="middle" fill="white" font-size="13" font-weight="bold">E</text>
 
   <!-- merge commit -->
-  <circle cx="500" cy="70" r="16" fill="#1a7f37"/>
-  <text x="500" y="75" text-anchor="middle" fill="white" font-size="13" font-weight="bold">M</text>
-  <text x="500" y="50" text-anchor="middle" fill="#1a7f37" font-size="11">merge commit</text>
+  <!-- "merge commit" label top=40, circle M top=59 → gap 19px -->
+  <text x="545" y="48" text-anchor="middle" fill="#1a7f37" font-size="11">merge commit</text>
+  <circle cx="545" cy="75" r="16" fill="#1a7f37"/>
+  <text x="545" y="80" text-anchor="middle" fill="white" font-size="13" font-weight="bold">M</text>
 
   <!-- branch labels -->
-  <rect x="8" y="50" width="44" height="20" rx="4" fill="#0969da"/>
-  <text x="30" y="64" text-anchor="middle" fill="white" font-size="11" font-weight="bold">main</text>
+  <!-- "main" badge right=63, circle A left=74 → gap 11px -->
+  <rect x="5" y="57" width="58" height="18" rx="4" fill="#0969da"/>
+  <text x="34" y="70" text-anchor="middle" fill="white" font-size="11" font-weight="bold">main</text>
 
-  <rect x="250" y="145" width="120" height="20" rx="4" fill="#bf8700"/>
-  <text x="310" y="159" text-anchor="middle" fill="white" font-size="11" font-weight="bold">feature/login</text>
+  <!-- "feature/login" badge top=163, circle D/E bottom=161 → gap 2px -->
+  <rect x="270" y="163" width="130" height="18" rx="4" fill="#bf8700"/>
+  <text x="335" y="176" text-anchor="middle" fill="white" font-size="11" font-weight="bold">feature/login</text>
 </svg>
